@@ -94,7 +94,8 @@ header {
   object-fit: cover;
 }
 .text {
-  width: 80vw;
+  width: auto;
+  max-width: 100vw;
   padding: 0.2em 0.1em;
   text-align: center;
   border: 0;
