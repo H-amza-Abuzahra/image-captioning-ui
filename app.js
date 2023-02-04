@@ -21,7 +21,7 @@ inputImage.addEventListener("change", function () {
 
   formData.append("file", inputImage.files[0]);
 
-  fetch("http://jellyfish-app-ciasp.ondigitalocean.app/get_caption", {
+  fetch("https://jellyfish-app-ciasp.ondigitalocean.app/get_caption", {
     method: "POST",
     body: formData,
   })
