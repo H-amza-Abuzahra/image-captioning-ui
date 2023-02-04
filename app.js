@@ -5,14 +5,21 @@ const inputImage = document.querySelector(".input--image");
 const displayImage = document.querySelector(".display--image");
 let navLinks = document.querySelectorAll("nav a");
 const textInput = document.querySelector(".text");
-
+const placeholder = document.querySelector(".place-holder");
 //Displaying the image in the container
 inputImage.addEventListener("change", function () {
   let file = inputImage.files[0];
   let reader = new FileReader();
   reader.onload = function (e) {
     displayImage.src = e.target.result;
+    placeholder.style.display = "none"
     displayImage.style.display = "block";
+    displayImage.style.overflow = "hidden"
+    console.log(displayImage.width)
+    console.log(displayImage.height)
+
+
+
   };
   reader.readAsDataURL(file);
 
